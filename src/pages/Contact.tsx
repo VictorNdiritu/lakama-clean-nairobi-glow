@@ -41,7 +41,7 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const whatsappUrl = "https://wa.me/254XXXXXXXXX?text=Hello%20Lakama%20Cleans,%20I%20would%20like%20to%20inquire%20about%20your%20cleaning%20services.";
+  const whatsappUrl = "https://wa.me/254707540229?text=Hello%20Lakama%20Cleans,%20I%20would%20like%20to%20inquire%20about%20your%20cleaning%20services.";
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -168,14 +168,14 @@ const Contact = () => {
                     <Phone className="text-teal-600" size={20} />
                     <div>
                       <p className="font-medium">Phone</p>
-                      <p className="text-gray-600">+254 XXX XXX XXX</p>
+                      <p className="text-gray-600">+254 707 540 229</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="text-teal-600" size={20} />
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-gray-600">info@lakamacleans.co.ke</p>
+                      <p className="text-gray-600">lakamacleans@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -224,7 +224,7 @@ const Contact = () => {
                   <p className="text-red-700 mb-4">
                     Need urgent cleaning services? Call us directly for same-day or emergency cleaning solutions.
                   </p>
-                  <p className="text-red-800 font-semibold">Emergency Line: +254 XXX XXX XXX</p>
+                  <p className="text-red-800 font-semibold">Emergency Line: +254 707 540 229</p>
                 </CardContent>
               </Card>
             </div>
