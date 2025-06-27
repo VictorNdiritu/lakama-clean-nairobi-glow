@@ -17,7 +17,6 @@ const Services = () => {
         "Window cleaning (interior)",
         "Appliance cleaning"
       ],
-      startingPrice: "KSh 3,000",
       popular: true
     },
     {
@@ -31,7 +30,6 @@ const Services = () => {
         "Trash removal and recycling",
         "Floor care and maintenance"
       ],
-      startingPrice: "KSh 5,000",
       popular: false
     },
     {
@@ -45,7 +43,6 @@ const Services = () => {
         "Floor preparation and cleaning",
         "Final touch-up cleaning"
       ],
-      startingPrice: "Custom Quote",
       popular: false
     },
     {
@@ -59,7 +56,6 @@ const Services = () => {
         "Follow-up treatments",
         "Eco-friendly options available"
       ],
-      startingPrice: "KSh 2,500",
       popular: false
     },
     {
@@ -73,7 +69,6 @@ const Services = () => {
         "Priority booking",
         "Discounted rates for regular clients"
       ],
-      startingPrice: "KSh 2,500",
       popular: false
     },
     {
@@ -87,7 +82,6 @@ const Services = () => {
         "Mold and mildew treatment",
         "Odor elimination"
       ],
-      startingPrice: "KSh 4,500",
       popular: false
     }
   ];
@@ -137,12 +131,6 @@ const Services = () => {
                     ))}
                   </ul>
                   <div className="border-t pt-4">
-                    <div className="flex justify-between items-center mb-4">
-                      <span className="text-2xl font-bold text-teal-600">{service.startingPrice}</span>
-                      {service.startingPrice !== "Custom Quote" && (
-                        <span className="text-gray-500 text-sm">per service</span>
-                      )}
-                    </div>
                     <Button asChild className="w-full bg-teal-600 hover:bg-teal-700">
                       <Link to="/booking">Book This Service</Link>
                     </Button>
@@ -167,7 +155,7 @@ const Services = () => {
             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-4">
               <Link to="/contact">Get Custom Quote</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-teal-600">
+            <Button asChild size="lg" className="text-lg px-8 py-4 bg-white text-teal-600 hover:bg-gray-100">
               <Link to="/booking">Book Standard Service</Link>
             </Button>
           </div>

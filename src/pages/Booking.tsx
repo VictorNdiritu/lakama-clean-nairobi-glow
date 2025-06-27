@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -63,12 +62,12 @@ const Booking = () => {
   };
 
   const services = [
-    { value: "residential", label: "Residential Cleaning", price: "KSh 3,000" },
-    { value: "office", label: "Office & Commercial", price: "KSh 5,000" },
-    { value: "construction", label: "Post-Construction", price: "Custom Quote" },
-    { value: "fumigation", label: "Fumigation & Pest Control", price: "KSh 2,500" },
-    { value: "regular", label: "Regular Cleaning Package", price: "KSh 2,500" },
-    { value: "deep", label: "Deep Cleaning", price: "KSh 4,500" }
+    { value: "residential", label: "Residential Cleaning" },
+    { value: "office", label: "Office & Commercial" },
+    { value: "construction", label: "Post-Construction" },
+    { value: "fumigation", label: "Fumigation & Pest Control" },
+    { value: "regular", label: "Regular Cleaning Package" },
+    { value: "deep", label: "Deep Cleaning" }
   ];
 
   const timeSlots = [
@@ -154,10 +153,7 @@ const Booking = () => {
                     <SelectContent>
                       {services.map((service) => (
                         <SelectItem key={service.value} value={service.value}>
-                          <div className="flex justify-between items-center w-full">
-                            <span>{service.label}</span>
-                            <span className="text-teal-600 ml-4">{service.price}</span>
-                          </div>
+                          {service.label}
                         </SelectItem>
                       ))}
                     </SelectContent>
@@ -260,7 +256,7 @@ const Booking = () => {
                       type="tel"
                       value={bookingData.phone}
                       onChange={(e) => handleInputChange("phone", e.target.value)}
-                      placeholder="+254 XXX XXX XXX"
+                      placeholder="+254 707 540 229"
                     />
                   </div>
                 </div>
@@ -272,7 +268,7 @@ const Booking = () => {
                     type="email"
                     value={bookingData.email}
                     onChange={(e) => handleInputChange("email", e.target.value)}
-                    placeholder="your.email@example.com"
+                    placeholder="lakamacleans@gmail.com"
                   />
                 </div>
                 <div>

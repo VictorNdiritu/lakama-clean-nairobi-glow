@@ -19,20 +19,26 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-teal-600 transition-colors">
-              Home
-            </Link>
-            <Link to="/services" className="text-gray-700 hover:text-teal-600 transition-colors">
-              Services
-            </Link>
-            <Link to="/about" className="text-gray-700 hover:text-teal-600 transition-colors">
-              About
-            </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-teal-600 transition-colors">
-              Contact
-            </Link>
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              <Link to="/" className="text-gray-700 hover:text-teal-600 transition-colors">
+                Home
+              </Link>
+              <Link to="/services" className="text-gray-700 hover:text-teal-600 transition-colors">
+                Services
+              </Link>
+              <Link to="/about" className="text-gray-700 hover:text-teal-600 transition-colors">
+                About
+              </Link>
+              <Link to="/contact" className="text-gray-700 hover:text-teal-600 transition-colors">
+                Contact
+              </Link>
+            </div>
+          </div>
+
+          {/* Book Now Button - Right Position */}
+          <div className="hidden md:flex">
             <Button asChild className="bg-teal-600 hover:bg-teal-700">
               <Link to="/booking">Book Now</Link>
             </Button>

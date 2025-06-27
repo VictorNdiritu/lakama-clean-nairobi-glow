@@ -86,7 +86,6 @@ const Index = () => {
                 <p className="text-gray-600 mb-4">
                   Deep cleaning and regular maintenance for your home
                 </p>
-                <p className="text-teal-600 font-semibold">Starting at KSh 3,000</p>
               </CardContent>
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
@@ -96,7 +95,6 @@ const Index = () => {
                 <p className="text-gray-600 mb-4">
                   Professional cleaning for workspaces and commercial properties
                 </p>
-                <p className="text-teal-600 font-semibold">Starting at KSh 5,000</p>
               </CardContent>
             </Card>
             <Card className="hover:shadow-lg transition-shadow">
@@ -106,7 +104,6 @@ const Index = () => {
                 <p className="text-gray-600 mb-4">
                   Thorough cleanup after construction or renovation projects
                 </p>
-                <p className="text-teal-600 font-semibold">Custom Pricing</p>
               </CardContent>
             </Card>
           </div>
@@ -131,7 +128,7 @@ const Index = () => {
             <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-4">
               <Link to="/booking">Schedule Cleaning</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-teal-600">
+            <Button asChild size="lg" className="text-lg px-8 py-4 bg-white text-teal-600 hover:bg-gray-100">
               <Link to="/contact">Get Free Quote</Link>
             </Button>
           </div>
