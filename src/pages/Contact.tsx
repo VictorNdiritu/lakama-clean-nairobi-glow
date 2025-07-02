@@ -91,11 +91,11 @@ const Contact = () => {
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent className="bg-white">
-                        <SelectItem value="home">🏠 Home Cleaning</SelectItem>
-                        <SelectItem value="office">🏢 Office & Commercial</SelectItem>
-                        <SelectItem value="construction">🏗 Post-Construction</SelectItem>
-                        <SelectItem value="fumigation">🦟 Fumigation & Pest Control</SelectItem>
-                        <SelectItem value="maintenance">🧽 Maintenance Cleaning</SelectItem>
+                        <SelectItem value="home">Home Cleaning</SelectItem>
+                        <SelectItem value="office">Office & Commercial</SelectItem>
+                        <SelectItem value="construction">Post-Construction</SelectItem>
+                        <SelectItem value="fumigation">Fumigation & Pest Control</SelectItem>
+                        <SelectItem value="maintenance">Maintenance Cleaning</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -184,7 +184,7 @@ const Contact = () => {
                     <Mail className="text-blue-600" size={20} />
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-gray-600">info@lakamacleans.com</p>
+                      <p className="text-gray-600">lakamacleans@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">

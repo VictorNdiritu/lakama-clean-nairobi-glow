@@ -97,7 +97,7 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">🏢 Office & Commercial Cleaning</h3>
+                <h3 className="text-xl font-semibold mb-2">Office & Commercial Cleaning</h3>
                 <p className="text-gray-600 mb-4">
                   For spotless workspaces that impress staff & clients.
                 </p>
@@ -108,7 +108,7 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Sparkles className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">🏠 Home Cleaning</h3>
+                <h3 className="text-xl font-semibold mb-2">Home Cleaning</h3>
                 <p className="text-gray-600 mb-4">
                   Come home to a fresh, healthy, welcoming space.
                 </p>
@@ -119,7 +119,7 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">🏗 Post-Construction & Renovation</h3>
+                <h3 className="text-xl font-semibold mb-2">Post-Construction & Renovation</h3>
                 <p className="text-gray-600 mb-4">
                   We handle dust & debris so your space is move-in ready.
                 </p>
@@ -130,7 +130,7 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">🦟 Fumigation & Pest Control</h3>
+                <h3 className="text-xl font-semibold mb-2">Fumigation & Pest Control</h3>
                 <p className="text-gray-600 mb-4">
                   Protect your property from pests, professionally.
                 </p>
@@ -141,7 +141,7 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Calendar className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">🧽 Maintenance Cleaning</h3>
+                <h3 className="text-xl font-semibold mb-2">Maintenance Cleaning</h3>
                 <p className="text-gray-600 mb-4">
                   Weekly or bi-weekly plans to keep everything effortlessly clean.
                 </p>

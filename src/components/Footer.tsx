@@ -50,11 +50,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Our Services</h3>
             <div className="space-y-2">
-              <p className="text-gray-400">🏠 Home Cleaning</p>
-              <p className="text-gray-400">🏢 Office Cleaning</p>
-              <p className="text-gray-400">🏗 Post-Construction</p>
-              <p className="text-gray-400">🦟 Fumigation</p>
-              <p className="text-gray-400">🧽 Maintenance</p>
+              <p className="text-gray-400">Home Cleaning</p>
+              <p className="text-gray-400">Office Cleaning</p>
+              <p className="text-gray-400">Post-Construction</p>
+              <p className="text-gray-400">Fumigation</p>
+              <p className="text-gray-400">Maintenance</p>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-cyan-400" />
-                <span className="text-gray-400">info@lakamacleans.com</span>
+                <span className="text-gray-400">lakamacleans@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={16} className="text-cyan-400" />
