@@ -114,14 +114,39 @@
   }
   
   .btn-primary {
-    @apply bg-gradient-to-r from-blue-900 to-cyan-500 hover:from-blue-800 hover:to-cyan-400 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105;
+    @apply bg-gradient-to-r from-blue-900 to-cyan-500 hover:from-blue-800 hover:to-cyan-400 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 !important;
+    color: white !important;
+    background: linear-gradient(135deg, #1e3a8a, #00bcd4) !important;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #1e40af, #00acc1) !important;
+    color: white !important;
   }
   
   .btn-secondary {
-    @apply bg-white text-blue-900 border-2 border-blue-900 hover:bg-blue-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300;
+    @apply bg-white text-blue-900 border-2 border-blue-900 hover:bg-blue-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300 !important;
+    color: #1e3a8a !important;
+    background-color: white !important;
+    border-color: #1e3a8a !important;
   }
 
   .btn-secondary-white {
-    @apply bg-white text-blue-900 border-2 border-white hover:bg-gray-100 hover:border-gray-100 font-semibold py-3 px-6 rounded-lg transition-all duration-300;
+    @apply bg-white text-blue-900 border-2 border-white hover:bg-gray-100 hover:border-gray-100 font-semibold py-3 px-6 rounded-lg transition-all duration-300 !important;
+    color: #1e3a8a !important;
+    background-color: white !important;
+    border-color: white !important;
+  }
+
+  .btn-outline-white {
+    @apply border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold py-3 px-6 rounded-lg transition-all duration-300 !important;
+    background-color: transparent !important;
+    color: white !important;
+    border-color: white !important;
+  }
+
+  .btn-outline-white:hover {
+    background-color: white !important;
+    color: #1e3a8a !important;
   }
 }
