@@ -1,9 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
-
+/* Brand color palette: deep blue & clean cyan */
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -15,7 +15,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 204 100% 97%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -37,20 +37,18 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand colors */
+    --brand-deep-blue: 210 100% 20%;
+    --brand-cyan: 180 100% 50%;
+    --brand-light-cyan: 180 100% 85%;
   }
 
   .dark {
@@ -99,5 +97,27 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', 'Open Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .brand-gradient {
+    background: linear-gradient(135deg, hsl(var(--brand-deep-blue)), hsl(var(--brand-cyan)));
+  }
+  
+  .brand-gradient-text {
+    background: linear-gradient(135deg, hsl(var(--brand-deep-blue)), hsl(var(--brand-cyan)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-900 to-cyan-500 hover:from-blue-800 hover:to-cyan-400 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-blue-900 border-2 border-blue-900 hover:bg-blue-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300;
   }
 }
