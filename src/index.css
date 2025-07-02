@@ -120,4 +120,8 @@
   .btn-secondary {
     @apply bg-white text-blue-900 border-2 border-blue-900 hover:bg-blue-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300;
   }
+
+  .btn-secondary-white {
+    @apply bg-white text-blue-900 border-2 border-white hover:bg-gray-100 hover:border-gray-100 font-semibold py-3 px-6 rounded-lg transition-all duration-300;
+  }
 }
