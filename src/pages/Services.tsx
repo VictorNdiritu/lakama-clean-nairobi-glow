@@ -106,17 +106,17 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className={`relative hover:shadow-lg transition-shadow ${service.popular ? 'ring-2 ring-teal-500' : ''}`}>
+              <Card key={index} className={`relative hover:shadow-lg transition-shadow ${service.popular ? 'ring-2 ring-cyan-500' : ''}`}>
                 {service.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-teal-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-cyan-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                       Most Popular
                     </span>
                   </div>
                 )}
                 <CardHeader className="text-center pb-4">
-                  <div className="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <service.icon className="text-teal-600" size={32} />
+                  <div className="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <service.icon className="text-blue-900" size={32} />
                   </div>
                   <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>
                   <p className="text-gray-600">{service.description}</p>
@@ -125,13 +125,13 @@ const Services = () => {
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-start">
-                        <span className="text-teal-500 mr-2">✓</span>
+                        <span className="text-cyan-500 mr-2">✓</span>
                         <span className="text-gray-600 text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <div className="border-t pt-4">
-                    <Button asChild className="w-full bg-teal-600 hover:bg-teal-700">
+                    <Button asChild className="w-full btn-primary">
                       <Link to="/booking">Book This Service</Link>
                     </Button>
                   </div>
@@ -143,7 +143,7 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-teal-600 text-white">
+      <section className="py-16 brand-gradient text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Need a Custom Cleaning Solution?
@@ -152,10 +152,10 @@ const Services = () => {
             Contact us for personalized cleaning packages and competitive pricing
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-4">
+            <Button asChild size="lg" className="text-lg px-8 py-4 btn-secondary-white">
               <Link to="/contact">Get Custom Quote</Link>
             </Button>
-            <Button asChild size="lg" className="text-lg px-8 py-4 bg-white text-teal-600 hover:bg-gray-100">
+            <Button asChild size="lg" className="text-lg px-8 py-4 bg-white text-blue-900 hover:bg-gray-100">
               <Link to="/booking">Book Standard Service</Link>
             </Button>
           </div>
