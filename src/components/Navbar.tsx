@@ -19,22 +19,20 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex items-center justify-center flex-1">
-            <div className="flex items-center space-x-8">
-              <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Home
-              </Link>
-              <Link to="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Services
-              </Link>
-              <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                About Us
-              </Link>
-              <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-                Get a Quote
-              </Link>
-            </div>
+          {/* Desktop Navigation - Better distributed */}
+          <div className="hidden md:flex items-center space-x-12 flex-1 justify-center max-w-2xl">
+            <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              Home
+            </Link>
+            <Link to="/services" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              Services
+            </Link>
+            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              About Us
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+              Get a Quote
+            </Link>
           </div>
 
           {/* Get Your Free Quote Button - Right Position */}
