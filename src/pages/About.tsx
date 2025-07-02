@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Heart, Shield, Leaf, Award, Star, Users } from "lucide-react";
+import { Heart, Shield, Leaf, Award, Star, Users, Calendar, Smile } from "lucide-react";
 
 const About = () => {
   return (
@@ -15,12 +15,17 @@ const About = () => {
               <h1 className="text-4xl font-bold text-gray-900 mb-6">
                 About <span className="brand-gradient-text">Lakama Cleans</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
-                We're passionate about creating cleaner, healthier environments for homes and businesses across Nairobi.
+              <h2 className="text-2xl font-semibold text-gray-700 mb-6">
+                Professional Cleaning Services You Can Rely On
+              </h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Welcome to Lakama Cleans, your trusted partner for all your cleaning and maintenance needs. 
+                At Lakama Cleans, we understand that a clean and well-maintained space can enhance productivity, 
+                comfort, and overall well-being.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Backed by over 7 years of experience, a fully trained team, and a commitment to eco-friendly cleaning, 
-                Lakama Cleans is here to make your life easier — and your spaces sparkle.
+                Whether you're looking to refresh your home, maintain a pristine office, or tackle the 
+                post-renovation mess, Lakama Cleans is here to help you every step of the way.
               </p>
               <Button asChild className="btn-primary">
                 <Link to="/services">Explore Our Services</Link>
@@ -30,8 +35,9 @@ const About = () => {
               <div className="brand-gradient rounded-lg p-8 text-white shadow-xl">
                 <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                 <p className="text-lg opacity-95">
-                  "To create cleaner, healthier environments that bring joy and peace of mind to every 
-                  home and business we serve, while protecting our planet with eco-friendly practices."
+                  "To deliver high-quality cleaning solutions with a focus on customer satisfaction, 
+                  eco-friendly practices, and attention to detail. At Lakama Cleans, we pride ourselves 
+                  on making your spaces cleaner, healthier, and more inviting."
                 </p>
               </div>
             </div>
@@ -51,42 +57,42 @@ const About = () => {
                 <div className="bg-gradient-to-br from-blue-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Star className="text-blue-800" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">7+ Years</h3>
+                <h3 className="text-xl font-semibold mb-3">Experienced Professionals</h3>
                 <p className="text-gray-600">
-                  Over 7 years of proven service in Nairobi with consistent quality results.
+                  Our team is trained and experienced in providing high-quality cleaning services tailored to your needs.
                 </p>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-xl transition-shadow border-0 shadow-lg">
-              <CardContent className="p-6">
-                <div className="bg-gradient-to-br from-blue-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="text-blue-800" size={32} />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Fully Insured</h3>
-                <p className="text-gray-600">
-                  All team members are fully trained and insured for your peace of mind.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="text-center hover-shadow-xl transition-shadow border-0 shadow-lg">
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-blue-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Leaf className="text-blue-800" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Eco-Friendly</h3>
+                <h3 className="text-xl font-semibold mb-3">Eco-Friendly Products</h3>
                 <p className="text-gray-600">
-                  Safe, eco-friendly products that protect your family, pets, and the environment.
+                  We care about the environment, using green cleaning products to ensure a safe, healthy, and sustainable experience.
                 </p>
               </CardContent>
             </Card>
             <Card className="text-center hover:shadow-xl transition-shadow border-0 shadow-lg">
               <CardContent className="p-6">
                 <div className="bg-gradient-to-br from-blue-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="text-blue-800" size={32} />
+                  <Smile className="text-blue-800" size={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Trusted Team</h3>
+                <h3 className="text-xl font-semibold mb-3">Customer Satisfaction</h3>
                 <p className="text-gray-600">
-                  Professional, reliable team members who respect your space and privacy.
+                  We're committed to exceeding your expectations with every service. Your satisfaction is our top priority.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-xl transition-shadow border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="bg-gradient-to-br from-blue-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="text-blue-800" size={32} />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">Flexible Scheduling</h3>
+                <p className="text-gray-600">
+                  We work around your schedule, offering both one-time and recurring cleaning services to suit your convenience.
                 </p>
               </CardContent>
             </Card>
@@ -142,7 +148,7 @@ const About = () => {
             Ready to Experience the Lakama Difference?
           </h2>
           <p className="text-xl mb-8 opacity-95">
-            Join hundreds of satisfied clients across Nairobi who trust us for their cleaning needs.
+            Let us handle the cleaning, so you can focus on what matters most. Reach out today to learn more!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-8 py-4">
