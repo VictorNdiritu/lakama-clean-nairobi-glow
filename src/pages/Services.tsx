@@ -73,7 +73,8 @@ const Services = () => {
         "Priority booking",
         "Discounted rates for regular clients"
       ],
-      popular: false
+      popular: false,
+      image: "/lovable-uploads/cdffe576-6815-41e5-9d48-fd4cdb1ca33d.png"
     },
     {
       icon: Sparkles,
@@ -100,8 +101,9 @@ const Services = () => {
             Our Cleaning Services
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Professional cleaning solutions tailored to your needs. From residential homes to commercial spaces, 
-            we deliver exceptional results every time.
+            At Lakama Cleans, we deliver professional cleaning solutions that transform your spaces into 
+            pristine environments. Our comprehensive range of services is designed to meet every cleaning 
+            need, from routine maintenance to specialized deep cleaning projects.
           </p>
         </div>
       </section>
