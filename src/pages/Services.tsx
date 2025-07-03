@@ -17,7 +17,8 @@ const Services = () => {
         "Window cleaning (interior)",
         "Appliance cleaning"
       ],
-      popular: true
+      popular: true,
+      image: "/lovable-uploads/1d2ecfc2-46ca-4e62-aa90-45f9f645360d.png"
     },
     {
       icon: Building,
@@ -30,7 +31,8 @@ const Services = () => {
         "Trash removal and recycling",
         "Floor care and maintenance"
       ],
-      popular: false
+      popular: false,
+      image: "/lovable-uploads/e1c0b012-7761-4048-a732-7e636f50ae76.png"
     },
     {
       icon: HardHat,
@@ -43,7 +45,8 @@ const Services = () => {
         "Floor preparation and cleaning",
         "Final touch-up cleaning"
       ],
-      popular: false
+      popular: false,
+      image: "/lovable-uploads/9e77b1be-379b-4a1c-861c-3bb40622715c.png"
     },
     {
       icon: Bug,
@@ -56,7 +59,8 @@ const Services = () => {
         "Follow-up treatments",
         "Eco-friendly options available"
       ],
-      popular: false
+      popular: false,
+      image: "/lovable-uploads/e0ab9ada-77c4-43b1-a845-9f7e4ac7a6ae.png"
     },
     {
       icon: RotateCcw,
@@ -82,7 +86,8 @@ const Services = () => {
         "Mold and mildew treatment",
         "Odor elimination"
       ],
-      popular: false
+      popular: false,
+      image: "/lovable-uploads/f32069f5-e935-455e-ae91-8ef804e2916d.png"
     }
   ];
 
@@ -114,8 +119,18 @@ const Services = () => {
                     </span>
                   </div>
                 )}
+                {service.image && (
+                  <div className="relative h-48 overflow-hidden rounded-t-lg">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  </div>
+                )}
                 <CardHeader className="text-center pb-4">
-                  <div className="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="bg-gradient-to-br from-blue-100 to-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <service.icon className="text-blue-900" size={32} />
                   </div>
                   <CardTitle className="text-xl font-semibold">{service.title}</CardTitle>
@@ -152,7 +167,7 @@ const Services = () => {
             Contact us for personalized cleaning packages and competitive pricing
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="text-lg px-8 py-4 btn-secondary-white">
+            <Button asChild size="lg" className="text-lg px-8 py-4 bg-white text-blue-900 hover:bg-gray-100">
               <Link to="/contact">Get Custom Quote</Link>
             </Button>
             <Button asChild size="lg" className="text-lg px-8 py-4 bg-white text-blue-900 hover:bg-gray-100">

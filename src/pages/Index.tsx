@@ -11,20 +11,30 @@ const Index = () => {
       <section className="relative bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100 py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 to-cyan-500/10"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Experience the <span className="brand-gradient-text">Joy of Clean</span>
-            </h1>
-            <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-              Professional cleaning services for homes, offices, and post-construction projects across Nairobi.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="btn-primary text-lg px-8 py-4">
-                <Link to="/contact">Get Your Free Quote</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="btn-secondary text-lg px-8 py-4">
-                <Link to="/services">Explore All Services</Link>
-              </Button>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                Experience the <span className="brand-gradient-text">Joy of Clean</span>
+              </h1>
+              <p className="text-xl text-gray-700 mb-8 max-w-3xl">
+                Professional cleaning services for homes, offices, and post-construction projects across Nairobi.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="btn-primary text-lg px-8 py-4">
+                  <Link to="/contact">Get Your Free Quote</Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="btn-secondary text-lg px-8 py-4">
+                  <Link to="/services">Explore All Services</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src="/lovable-uploads/ed24baad-9239-4863-83b1-4413b2229f9c.png"
+                alt="Professional cleaning team at work"
+                className="rounded-lg shadow-2xl w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
             </div>
           </div>
         </div>
@@ -85,35 +95,42 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Services Overview with Images */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
           </div>
+          
+          {/* Featured Services with Images */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="/lovable-uploads/1d2ecfc2-46ca-4e62-aa90-45f9f645360d.png"
+                alt="Home cleaning supplies and equipment"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Home Cleaning</h3>
+                <p className="text-lg opacity-90">Come home to a fresh, healthy, welcoming space.</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="/lovable-uploads/e1c0b012-7761-4048-a732-7e636f50ae76.png"
+                alt="Professional office cleaning service"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Office Cleaning</h3>
+                <p className="text-lg opacity-90">For spotless workspaces that impress staff & clients.</p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow duration-300 border-0 shadow-lg">
-              <CardContent className="p-6 text-center">
-                <div className="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="text-white" size={32} />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Office & Commercial Cleaning</h3>
-                <p className="text-gray-600 mb-4">
-                  For spotless workspaces that impress staff & clients.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-xl transition-shadow duration-300 border-0 shadow-lg">
-              <CardContent className="p-6 text-center">
-                <div className="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Sparkles className="text-white" size={32} />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Home Cleaning</h3>
-                <p className="text-gray-600 mb-4">
-                  Come home to a fresh, healthy, welcoming space.
-                </p>
-              </CardContent>
-            </Card>
             <Card className="hover:shadow-xl transition-shadow duration-300 border-0 shadow-lg">
               <CardContent className="p-6 text-center">
                 <div className="bg-gradient-to-br from-blue-600 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
